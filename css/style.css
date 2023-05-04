@@ -122,5 +122,36 @@ header .footer p a {
     color: var(--themeColor);
 }
 
+/* Mobile nav toggle */
+
+#menuBtn {
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    color: white;
+    background-color: var(--themeColor);
+    line-height: 42px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0,0,0,20%);
+    display: none;
+    z-index: 999;
+}
+
+/* Mobile view */
+@media only screen and (max-width: 1050px) {
+    header {
+        left: -300px;
+    }
+    header .footer {
+        left: -300px;
+    }
+    #menuBtn {
+        display: block;
+    }
+}
+
 
 /* ==== Header END ==== */
